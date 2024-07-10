@@ -16,4 +16,4 @@ git config --global user.email "GITHUB_EMAIL"
 
 (without writing {NAME/EMAIL} it will tell us our email and username)
 
-git log --online (show commit log messages)
+git log --oneline (show commit log messages)
