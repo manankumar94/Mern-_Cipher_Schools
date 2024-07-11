@@ -1,0 +1,26 @@
+GIT COMMAND Class-4
+
+git revert  (revert to some point of time OPEN VI editor)
+
+git reset --soft TRACK_ID - This command moves the HEAD to the specified commit (TRACK_ID) and stages all changes from commits between the current HEAD and TRACK_ID.
+
+Effects:
+Keeps all changes in your working directory and index (staging area).
+Does not modify the files in your working directory.
+Allows you to make new commits that include the changes from the commits that were reset.
+
+
+git reset --hard TRACK_ID - This command moves the HEAD to the specified commit (TRACK_ID) and resets the index and working directory to match this commit.
+
+Effects:
+Resets the index to match the specified commit.
+Resets the files in the working directory to match the files in the index. Any changes in the working directory not staged in the index are lost.
+Removes all changes made after the specified commit (TRACK_ID).
+Use Case: Typically used when you want to completely discard changes or reset to a clean state as of the specified commit.
+
+
+git checkout -b BRANCH_NAME (create and take to that branch)
+
+git checkout BRANCH_NAME (take to that branch)
+
+git brach (to check how many branches are there)
